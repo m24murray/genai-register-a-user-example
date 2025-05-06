@@ -87,6 +87,49 @@ app.get('/submitted', (req, res) => {
   res.render('submitted');
 });
 
+// Define a route with deliberate security vulnerabilities
+app.get('/vulnerable', (req, res) => {
+  const userInput = req.query.input || 'default';
+
+  // Vulnerable to XSS
+  const xssVulnerableContent = `<h1 class="text-danger">User Input: ${userInput}</h1>`;
+
+  // Vulnerable to SQL Injection (simulated)
+  const sqlQuery = `SELECT * FROM users WHERE name = '${userInput}'`;
+  console.log('Simulated SQL Query:', sqlQuery);
+
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vulnerable Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+      <body class="container mt-4">
+        <div class="card">
+          <div class="card-header bg-danger text-white">
+            <h2>Vulnerable Page</h2>
+          </div>
+          <div class="card-body">
+            ${xssVulnerableContent}
+            <p class="text-warning">Simulated SQL Query: <code>${sqlQuery}</code></p>
+            <form method="get" class="mt-3">
+              <div class="mb-3">
+                <label for="input" class="form-label">Enter something:</label>
+                <input type="text" id="input" name="input" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+    </html>
+  `);
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
