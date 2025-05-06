@@ -51,6 +51,12 @@ The "Register User Details" app is a Node.js front-end web application designed 
   - Hot reload
   - Run tests
 
+### Iteration 2 Updates
+- Added a basic Express server.
+- Configured Nunjucks as the templating engine.
+- Implemented the Start Page route and view.
+- Created a layout template using the GOV.UK Design System.
+
 ## Future Considerations
 - Authentication will be implemented in a future iteration.
 - Deployment configurations will be added later.

@@ -65,6 +65,7 @@ When you are satisfied that you have completed the neccessary tasks for this ite
   - Use English (U.K) for comments/naming conventions, i.e. specialise instead of specialize
 
 ## Git guidelines
+- If one does not exist, create me a gitignore file and populate with typical node express ts gitignore contents
 - **Commit messages**:
   - Use English (U.K) for git branch names and commits, i.e. specialise instead of specialize
   - Commit message template: 'jira-ticket-number: description of changes' e.g. "ABC-123: Adding repository classes for user collection".

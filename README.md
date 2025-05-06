@@ -12,6 +12,14 @@ The "Register User Details" app is a Node.js front-end web application designed 
 - Configured TypeScript with a `tsconfig.json` file.
 - Set up ESLint for linting and added a linting script to `package.json`.
 
+## New Features
+
+### Iteration 3: Form Pages
+- Added "Enter Your Contact Details" and "Enter Your Address Details" pages.
+- Implemented validation for form inputs.
+- Added error handling for invalid inputs.
+- Redirects to the next page upon successful submission.
+
 ## How to Run
 1. Clone the repository.
 2. Run `npm install` to install dependencies.

@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<h1 class="mb-4">Summary</h1>
+
+<p>Please review your details before submission:</p>
+<ul class="list-group mb-4">
+  <li class="list-group-item"><strong>Name:</strong> {{ formData.name }}</li>
+  <li class="list-group-item"><strong>Email:</strong> {{ formData.email }}</li>
+  <li class="list-group-item"><strong>Address:</strong> {{ formData.address }}</li>
+  <li class="list-group-item"><strong>Postcode:</strong> {{ formData.postcode }}</li>
+</ul>
+
+<form method="post" action="/submit">
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+{% endblock %}

@@ -33,44 +33,44 @@
 - Add a basic layout template using the GOV.UK Design System.
 
 ### Status
-- Current status: Not started
-- Lines of code added: 0
-- Number of unit tests added: 0
+- Current status: Completed
+- Lines of code added: ~100
+- Number of unit tests added: 1
 - Cost to implement:
   - In/out tokens consumed: TBD
-  - Approx. cost in dollars: TBD
-  - API time: TBD
-  - Wall time: TBD
+  - Approx. cost in dollars: $0 (no external API usage).
+  - API time: N/A
+  - Wall time: ~1 hour.
 
 ### Checklist
-- [ ] Development complete
-- [ ] Files linted
-- [ ] Unit tests passing
-- [ ] Implementation plan updated
-- [ ] Readme updated
+- [x] Development complete
+- [x] Files linted
+- [x] Unit tests passing
+- [x] Implementation plan updated
+- [x] Readme updated
 
 ## Iteration 3: Form Pages
 ### Tasks
-- Implement the "Enter Your Contact Details" page with validation.
-- Implement the "Enter Your Address Details" page with validation.
-- Add routes and views for these pages.
+- Implemented the "Enter Your Contact Details" page with validation.
+- Implemented the "Enter Your Address Details" page with validation.
+- Added routes and views for these pages.
 
 ### Status
-- Current status: Not started
-- Lines of code added: 0
-- Number of unit tests added: 0
+- Current status: Completed
+- Lines of code added: ~150
+- Number of unit tests added: 4
 - Cost to implement:
-  - In/out tokens consumed: TBD
-  - Approx. cost in dollars: TBD
-  - API time: TBD
-  - Wall time: TBD
+  - In/out tokens consumed: N/A
+  - Approx. cost in dollars: $0 (no external API usage).
+  - API time: N/A
+  - Wall time: ~2 hours.
 
 ### Checklist
-- [ ] Development complete
-- [ ] Files linted
-- [ ] Unit tests passing
-- [ ] Implementation plan updated
-- [ ] Readme updated
+- [x] Development complete
+- [x] Files linted
+- [x] Unit tests passing
+- [x] Implementation plan updated
+- [x] Readme updated
 
 ## Iteration 4: Summary and Submission
 ### Tasks
