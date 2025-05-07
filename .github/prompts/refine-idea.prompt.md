@@ -8,9 +8,9 @@ I want to create a new Node.js front-end web app. It will comprise of a series o
 ### Details
 * Node.js express, with typescript
 * Use npm for dependency management, create the app using npm init
-* This is really important, the app must be GDS compliant, so please use the GOV.UK Design System (styles, components, patterns) as much as possible (this is installed with npm install govuk-frontend --save)
+* I want it to look nice, so lets pull in bootstrap.js
 * Consider using libraries for commonly used functions, e.g. lodash
-* Jest for unit testing
+* Jest for unit testing (ill provide instructions for this in a setup-testing.prompt.md file)
 * just use latest stable versions of npm dependencies
 * Use nunjucks for templating 
 * Eventually we'll have a backend api that we can persist some data to. But for now we'll just stub this out and log the data instead.
@@ -29,6 +29,13 @@ I want to create a new Node.js front-end web app. It will comprise of a series o
   * Submitted - An screen confirming the form has been complete. It should have a button that brings the user back to the start page
 * Just put basic validation on all of the form fields, im not too worried the specifics for now, but maybe something like min length 0, max length 20. I'll extend on this manually.
 
+### Additional information
+I want to prioritise getting the app running, so ideally the first few operations should be
+* setup the project using npm
+* create a basic hello world template, but make sure its got bootstrap styling
+* setting up my app/server.js to run the app 
+* try and sort out boring config things like tsconfig and my package.json scripts early so i dont keep hitting obstacles when i try and run the app.
+Call the above iteration 0, after than we can settle into a more structured approach for the implementation iterations where we do tdd, linting, testing, committing to git e.t.c
 
 ## Refinement instructions
 I want you to take the details above and help me to refine. Ask me one question at a time so we can develop a detailed spec. 
@@ -39,4 +46,4 @@ If you have more than 20 refinement questions, do not start the refinement proce
 Instead give me a rough idea of what information I'm missing and then I will adjust the details section accordingly.
 
 ## Final output
-There is an empty file in this project directory called `spec.md`. I want you to update that file to include the information provided to you in the details above, as well as the answers to your refinement questions.
+Create a file in this project directory called `spec.md`. I want that file to include the information provided to you in the details above, as well as the answers to your refinement questions.

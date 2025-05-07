@@ -51,16 +51,8 @@ When you are satisfied that you have completed the neccessary tasks for this ite
 - **Code Quality**:
   - Use a linter (e.g., ESLint) to ensure code quality.
   - Follow best practices for clean and maintainable code.
-- **Documentation**:
-  - Document all API endpoints in a dedicated `api-docs.md` file.
-  - Add inline comments for complex logic.
 - **Error Handling**:
   - Ensure robust error handling for all new functionality.
-- **Security**:
-  - Validate and sanitize all user inputs.
-  - Use environment variables for sensitive data (e.g., `.env` file).
-- **Performance**:
-  - Optimize code for performance where applicable.
 - **Language**:
   - Use English (U.K) for comments/naming conventions, i.e. specialise instead of specialize
 

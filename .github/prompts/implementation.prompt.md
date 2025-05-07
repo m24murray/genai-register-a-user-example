@@ -9,11 +9,6 @@ Each iteration should contain a section for the following information that will 
 * Current status (Not started, In progress, Complete)
 * Lines of code added
 * Number of unit tests added
-* Cost to implement
-  * In/out tokens consumed
-  * Approx. cost in dollars
-  * API time (time spent processing)
-  * Wall time (real world time to implement this iteration)
 
 Each iteration should also contain a checklist for the following items:
 - Development complete
